@@ -3,3 +3,12 @@
 const lamp = document.getElementById('lamp');
 const switchButton = document.getElementById('switchButton');
 
+
+// Variabile booleana on(off) per la lampadina
+let lampOn = false; // false = spenta, true = accesa
+
+// Aggiungiamo un event listener al bottone
+switchButton.addEventListener('click', function() {
+  // Invertiamo lo stato
+  lampOn = !lampOn;
+});
