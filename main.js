@@ -11,4 +11,15 @@ let lampOn = false; // false = spenta, true = accesa
 switchButton.addEventListener('click', function() {
   // Invertiamo lo stato
   lampOn = !lampOn;
-});
+
+    // Istruzioni condizionali per accensione/spegnimento della lampadina;
+    if (lampOn) {
+        lamp.src = 'img/yellow_lamp.png';
+        switchButton.textContent = 'On';
+      } else {
+        lamp.src = 'img/white_lamp.png';
+        switchButton.textContent = 'Off';
+      }
+    });
+
+// RISULTATO ALTERNATIVO UTILIZZANDO include();
